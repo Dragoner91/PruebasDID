@@ -1,0 +1,213 @@
+[
+  {
+    "nombre": "inicio",
+    "datos": {
+      "plataforma": "android",
+      "version": 35,
+      "constantes": {
+        "uiMode": "normal",
+        "reactNativeVersion": {
+          "minor": 87,
+          "prerelease": null,
+          "patch": 1,
+          "major": 0
+        },
+        "isTesting": false,
+        "Brand": "google",
+        "Manufacturer": "Google",
+        "Release": "15",
+        "Fingerprint": "google/sdk_gphone16k_x86_64/emu64xa16k:15/AE3A.240806.043/12960925:userdebug/dev-keys",
+        "Serial": "unknown",
+        "Model": "sdk_gphone16k_x86_64",
+        "Version": 35
+      },
+      "snarkjs": "0.7.6",
+      "n": 10,
+      "entrada": {
+        "fechaNacimiento": 19950617,
+        "fechaActual": 20261013,
+        "edadMinima": 18
+      }
+    }
+  },
+  {
+    "nombre": "1. Diagnóstico de Hermes",
+    "datos": {
+      "ok": true,
+      "motor": "Hermes",
+      "hermes": {
+        "Bytecode Version": 98,
+        "Static Hermes": true,
+        "Builtins Frozen": false,
+        "VM Experiments": 0,
+        "Build": "Release",
+        "GC": "hades (concurrent)",
+        "OSS Release Version": "250829098.0.17",
+        "Debugger Enabled": false,
+        "CommonJS Modules": "None"
+      },
+      "webAssembly": "undefined",
+      "webAssemblyApi": [],
+      "bigInt": "function",
+      "textEncoder": "function",
+      "textDecoder": "undefined",
+      "cryptoGetRandomValues": "function",
+      "worker": "undefined",
+      "sharedArrayBuffer": "undefined",
+      "atob": "function"
+    }
+  },
+  {
+    "nombre": "2. WASM mínimo en Hermes",
+    "datos": {
+      "ok": false,
+      "error": "WebAssembly no está definido en este motor"
+    }
+  },
+  {
+    "nombre": "error_global_no_capturado",
+    "datos": {
+      "esFatal": true,
+      "error": "Error: Creating blobs from 'ArrayBuffer' and 'ArrayBufferView' are not supported\n    at anonymous (address at index.android.bundle:1:949918)\n    at map (native)\n    at createFromParts (address at index.android.bundle:1:533761)\n    at Blob (address at index.android.bundle:1:534484)\n    at anonymous (address at index.android.bundle:1:198398)\n    at loadModuleImplementation (address at index.android.bundle:1:221733)\n    at guardedLoadModule (address at index.android.bundle:1:221312)\n    at metroRequire (address at index.android.bundle:1:220792)\n    at ?anon_0_ (address at index.android.bundle:1:976863)\n    at next (native)\n    at asyncGeneratorStep (address at index.android.bundle:1:438157)\n    at anonymous (address at index.android.bundle:1:967619)\n    at tryCallTwo (address at InternalBytecode.js:1:1329)\n    at Promise (address at InternalBytecode.js:1:1440)\n    at anonymous (address at index.android.bundle:1:615109)\n    at apply (native)\n    at _snarkjsEnMotor (address at index.android.bundle:1:468337)\n    at apply (native)\n    at snarkjsEnMotor (address at index.android.bundle:1:468274)\n    at ?anon_0_ (address at index.android.bundle:1:1378593)\n    at next (native)\n    at asyncGeneratorStep (address at index.android.bundle:1:438157)\n    at anonymous (address at index.android.bundle:1:967619)\n    at tryCallTwo (address at InternalBytecode.js:1:1329)\n    at Promise (address at InternalBytecode.js:1:1440)\n    at anonymous (address at index.android.bundle:1:615109)\n    at ?anon_0_ (address at index.android.bundle:1:1292094)\n    at next (native)\n    at asyncGeneratorStep (address at index.android.bundle:1:438157)\n    at anonymous (address at index.android.bundle:1:967619)\n    at tryCallTwo (address at InternalBytecode.js:1:1329)\n    at Promise (address at InternalBytecode.js:1:1440)\n    at anonymous (address at index.android.bundle:1:615109)\n    at apply (native)\n    at paso (address at index.android.bundle:1:975681)\n    at ?anon_0_ (address at index.android.bundle:1:1117925)\n    at next (native)\n    at asyncGeneratorStep (address at index.android.bundle:1:438157)\n    at _next (address at index.android.bundle:1:1114306)\n    at tryCallOne (address at InternalBytecode.js:1:1296)\n    at anonymous (address at InternalBytecode.js:1:4984)"
+    }
+  },
+  {
+    "nombre": "3. snarkjs Groth16 en Hermes",
+    "datos": {
+      "ok": false,
+      "error": "TypeError: Cannot read property 'groth16' of undefined\n    at ?anon_0_ (address at index.android.bundle:1:977069)\n    at next (native)\n    at asyncGeneratorStep (address at index.android.bundle:1:438157)\n    at anonymous (address at index.android.bundle:1:967619)\n    at tryCallTwo (address at InternalBytecode.js:1:1329)\n    at Promise (address at InternalBytecode.js:1:1440)\n    at anonymous (address at index.android.bundle:1:615109)\n    at apply (native)\n    at _snarkjsEnMotor (address at index.android.bundle:1:468337)\n    at apply (native)\n    at snarkjsEnMotor (address at index.android.bundle:1:468274)\n    at ?anon_0_ (address at index.android.bundle:1:1378593)\n    at next (native)\n    at asyncGeneratorStep (address at index.android.bundle:1:438157)\n    at anonymous (address at index.android.bundle:1:967619)\n    at tryCallTwo (address at InternalBytecode.js:1:1329)\n    at Promise (address at InternalBytecode.js:1:1440)\n    at anonymous (address at index.android.bundle:1:615109)\n    at ?anon_0_ (address at index.android.bundle:1:1292094)\n    at next (native)\n    at asyncGeneratorStep (address at index.android.bundle:1:438157)\n    at anonymous (address at index.android.bundle:1:967619)\n    at tryCallTwo (address at InternalBytecode.js:1:1329)\n    at Promise (address at InternalBytecode.js:1:1440)\n    at anonymous (address at index.android.bundle:1:615109)\n    at apply (native)\n    at paso (address at index.android.bundle:1:975681)\n    at ?anon_0_ (address at index.android.bundle:1:1117925)\n    at next (native)\n    at asyncGeneratorStep (address at index.android.bundle:1:438157)\n    at _next (address at index.android.bundle:1:1114306)\n    at tryCallOne (address at InternalBytecode.js:1:1296)\n    at anonymous (address at InternalBytecode.js:1:4984)"
+    }
+  },
+  {
+    "nombre": "4. Diagnóstico de la WebView",
+    "datos": {
+      "ok": true,
+      "userAgent": "Mozilla/5.0 (Linux; Android 15; sdk_gphone16k_x86_64 Build/AE3A.240806.043; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.219 Mobile Safari/537.36",
+      "webAssembly": "object",
+      "worker": "function",
+      "sharedArrayBuffer": "undefined",
+      "crossOriginIsolated": false,
+      "hardwareConcurrency": 4
+    }
+  },
+  {
+    "nombre": "5. snarkjs Groth16 en WebView (1 hilo)",
+    "datos": {
+      "ok": true,
+      "primeraEjecucionMs": 192,
+      "pruebaMs": {
+        "n": 10,
+        "media": 150.8,
+        "mediana": 150.8,
+        "desv": 12.2,
+        "p95": 178.3,
+        "min": 133.3,
+        "max": 178.3
+      },
+      "verificacionMs": {
+        "n": 10,
+        "media": 27.2,
+        "mediana": 25.6,
+        "desv": 5.6,
+        "p95": 40.8,
+        "min": 22.4,
+        "max": 40.8
+      },
+      "proof": {
+        "pi_a": [
+          "12067531721887036744916415781597129868705032684096838222662613640848900585358",
+          "12517806703798567420222362600195284485616236420250273629758258493340168850634",
+          "1"
+        ],
+        "pi_b": [
+          [
+            "8095165578942998455301690126818108872476091029190337287181702447596042754217",
+            "5294847275572783203190796913125233675056218477750504865341633581211127631496"
+          ],
+          [
+            "11293227144292048614506404063972079488592849328610580913966591315147450591114",
+            "20767468430223730190895684940033836552228820624166686534886417852360299825285"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "pi_c": [
+          "9009672176693450141111344272133566562358289206089731995766788043310698293244",
+          "14145187112442909189653878902411287402758516456099310211621374492058442974979",
+          "1"
+        ],
+        "protocol": "groth16",
+        "curve": "bn128"
+      },
+      "publicSignals": [
+        "20261013",
+        "18"
+      ],
+      "reverificadaEnNode": true
+    }
+  },
+  {
+    "nombre": "5. snarkjs Groth16 en WebView (varios hilos)",
+    "datos": {
+      "ok": true,
+      "primeraEjecucionMs": 51,
+      "pruebaMs": {
+        "n": 10,
+        "media": 46.3,
+        "mediana": 46.4,
+        "desv": 4.6,
+        "p95": 53.1,
+        "min": 37.8,
+        "max": 53.1
+      },
+      "verificacionMs": {
+        "n": 10,
+        "media": 24.2,
+        "mediana": 22.8,
+        "desv": 4.5,
+        "p95": 35.7,
+        "min": 20,
+        "max": 35.7
+      },
+      "proof": {
+        "pi_a": [
+          "15459870886386048687003084651636647962324389682936254997875187843077753693687",
+          "13624054392372115865946130136208367200782492215675250072090013496964742596513",
+          "1"
+        ],
+        "pi_b": [
+          [
+            "15651947913424349439000400454692917431585001879762851658850048484165182287839",
+            "16556107890558970576211106695248880517077194044269017737378302976212863975929"
+          ],
+          [
+            "5729744943432024757840957976797686586394895676466079628714771935607719718678",
+            "21398361558487645108313759714496502384731546309333627397534672423451013743786"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "pi_c": [
+          "7637309261697543433232723591696384000585893185151949092662251903851408228247",
+          "4512715646330357534359399571329709565785315377122728406261670574776243396402",
+          "1"
+        ],
+        "protocol": "groth16",
+        "curve": "bn128"
+      },
+      "publicSignals": [
+        "20261013",
+        "18"
+      ],
+      "reverificadaEnNode": true
+    }
+  },
+  {
+    "nombre": "fin",
+    "datos": {}
+  }
+]

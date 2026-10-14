@@ -1,0 +1,302 @@
+{
+  "entorno": {
+    "fecha": "2026-10-13T23:37:31.363Z",
+    "so": "Windows_NT 10.0.26300 (x64)",
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12700H",
+    "nucleos": 20,
+    "ramGB": 32,
+    "node": "v24.6.0",
+    "snarkjs": "0.7.6",
+    "circom": "circom compiler 2.2.3"
+  },
+  "resultados": [
+    {
+      "circuito": "mayoria_edad",
+      "esquema": "groth16",
+      "repeticiones": 30,
+      "tiempos_ms": {
+        "witness": {
+          "media": 7.57,
+          "mediana": 7.49,
+          "desv": 0.93,
+          "p95": 9.32,
+          "min": 6.03,
+          "max": 9.58
+        },
+        "prueba": {
+          "media": 29.45,
+          "mediana": 26.76,
+          "desv": 5.95,
+          "p95": 43.56,
+          "min": 22.91,
+          "max": 43.88
+        },
+        "witnessMasPrueba": {
+          "media": 37.02,
+          "mediana": 35.06,
+          "desv": 6.15,
+          "p95": 52.05,
+          "min": 30.38,
+          "max": 52.18
+        },
+        "verificacionOffChain": {
+          "media": 9.04,
+          "mediana": 8.18,
+          "desv": 1.73,
+          "p95": 11.76,
+          "min": 6.97,
+          "max": 14.31
+        }
+      },
+      "tamanos_bytes": {
+        "pruebaCalldata": 256,
+        "senalesPublicas": 64,
+        "zkey": 53421,
+        "vkey": 3108,
+        "verificadorSol": 7465
+      },
+      "restricciones": 99,
+      "contrato": "Groth16Verifier_mayoria_edad"
+    },
+    {
+      "circuito": "mayoria_edad",
+      "esquema": "plonk",
+      "repeticiones": 30,
+      "tiempos_ms": {
+        "witness": {
+          "media": 10.87,
+          "mediana": 11.26,
+          "desv": 1.6,
+          "p95": 13.29,
+          "min": 7.2,
+          "max": 14.02
+        },
+        "prueba": {
+          "media": 243.95,
+          "mediana": 257.07,
+          "desv": 36.36,
+          "p95": 275.83,
+          "min": 162.49,
+          "max": 283.63
+        },
+        "witnessMasPrueba": {
+          "media": 254.82,
+          "mediana": 268.37,
+          "desv": 37.63,
+          "p95": 287.34,
+          "min": 170.51,
+          "max": 295.81
+        },
+        "verificacionOffChain": {
+          "media": 14.76,
+          "mediana": 14.6,
+          "desv": 1.59,
+          "p95": 17,
+          "min": 10.63,
+          "max": 20.21
+        }
+      },
+      "tamanos_bytes": {
+        "pruebaCalldata": 768,
+        "senalesPublicas": 64,
+        "zkey": 435532,
+        "vkey": 2037,
+        "verificadorSol": 31007
+      },
+      "restricciones": 184,
+      "contrato": "PlonkVerifier_mayoria_edad"
+    },
+    {
+      "circuito": "mayoria_edad",
+      "esquema": "fflonk",
+      "repeticiones": 30,
+      "tiempos_ms": {
+        "witness": {
+          "media": 11.81,
+          "mediana": 11.7,
+          "desv": 0.88,
+          "p95": 13.55,
+          "min": 9.99,
+          "max": 14.64
+        },
+        "prueba": {
+          "media": 303.48,
+          "mediana": 304.14,
+          "desv": 9.01,
+          "p95": 318.72,
+          "min": 279.28,
+          "max": 322.56
+        },
+        "witnessMasPrueba": {
+          "media": 315.29,
+          "mediana": 315.71,
+          "desv": 8.84,
+          "p95": 330.66,
+          "min": 290.86,
+          "max": 333.94
+        },
+        "verificacionOffChain": {
+          "media": 10.35,
+          "mediana": 9.92,
+          "desv": 1.08,
+          "p95": 12.88,
+          "min": 8.47,
+          "max": 13.04
+        }
+      },
+      "tamanos_bytes": {
+        "pruebaCalldata": 768,
+        "senalesPublicas": 64,
+        "zkey": 632624,
+        "vkey": 1103,
+        "verificadorSol": 61571
+      },
+      "restricciones": 184,
+      "contrato": "FflonkVerifier_mayoria_edad"
+    },
+    {
+      "circuito": "vigencia",
+      "esquema": "groth16",
+      "repeticiones": 30,
+      "tiempos_ms": {
+        "witness": {
+          "media": 11.19,
+          "mediana": 11.13,
+          "desv": 0.64,
+          "p95": 12.26,
+          "min": 10.1,
+          "max": 12.29
+        },
+        "prueba": {
+          "media": 42.19,
+          "mediana": 42.38,
+          "desv": 2.14,
+          "p95": 44.5,
+          "min": 35.23,
+          "max": 46.25
+        },
+        "witnessMasPrueba": {
+          "media": 53.38,
+          "mediana": 53.68,
+          "desv": 2.37,
+          "p95": 56.05,
+          "min": 45.64,
+          "max": 57.98
+        },
+        "verificacionOffChain": {
+          "media": 12.52,
+          "mediana": 12.41,
+          "desv": 0.94,
+          "p95": 13.25,
+          "min": 10.98,
+          "max": 16.62
+        }
+      },
+      "tamanos_bytes": {
+        "pruebaCalldata": 256,
+        "senalesPublicas": 32,
+        "zkey": 48669,
+        "vkey": 2927,
+        "verificadorSol": 7076
+      },
+      "restricciones": 88,
+      "contrato": "Groth16Verifier_vigencia"
+    },
+    {
+      "circuito": "vigencia",
+      "esquema": "plonk",
+      "repeticiones": 30,
+      "tiempos_ms": {
+        "witness": {
+          "media": 11.53,
+          "mediana": 11.18,
+          "desv": 0.94,
+          "p95": 13.15,
+          "min": 10.1,
+          "max": 14.02
+        },
+        "prueba": {
+          "media": 263.44,
+          "mediana": 259.76,
+          "desv": 16.77,
+          "p95": 298.55,
+          "min": 239.21,
+          "max": 320.89
+        },
+        "witnessMasPrueba": {
+          "media": 274.97,
+          "mediana": 271.43,
+          "desv": 16.95,
+          "p95": 311.28,
+          "min": 249.65,
+          "max": 332.52
+        },
+        "verificacionOffChain": {
+          "media": 14.89,
+          "mediana": 14.72,
+          "desv": 0.74,
+          "p95": 16.59,
+          "min": 14.13,
+          "max": 17.65
+        }
+      },
+      "tamanos_bytes": {
+        "pruebaCalldata": 768,
+        "senalesPublicas": 32,
+        "zkey": 393840,
+        "vkey": 2037,
+        "verificadorSol": 29285
+      },
+      "restricciones": 165,
+      "contrato": "PlonkVerifier_vigencia"
+    },
+    {
+      "circuito": "vigencia",
+      "esquema": "fflonk",
+      "repeticiones": 30,
+      "tiempos_ms": {
+        "witness": {
+          "media": 12.2,
+          "mediana": 11.65,
+          "desv": 1.25,
+          "p95": 14.66,
+          "min": 10.69,
+          "max": 15.32
+        },
+        "prueba": {
+          "media": 312.93,
+          "mediana": 305.17,
+          "desv": 14.42,
+          "p95": 340.83,
+          "min": 292.53,
+          "max": 342.93
+        },
+        "witnessMasPrueba": {
+          "media": 325.14,
+          "mediana": 319.03,
+          "desv": 14.67,
+          "p95": 352.54,
+          "min": 303.81,
+          "max": 353.81
+        },
+        "verificacionOffChain": {
+          "media": 10.93,
+          "mediana": 10.25,
+          "desv": 1.55,
+          "p95": 14.51,
+          "min": 8.61,
+          "max": 14.72
+        }
+      },
+      "tamanos_bytes": {
+        "pruebaCalldata": 768,
+        "senalesPublicas": 32,
+        "zkey": 590932,
+        "vkey": 1104,
+        "verificadorSol": 60615
+      },
+      "restricciones": 165,
+      "contrato": "FflonkVerifier_vigencia"
+    }
+  ]
+}

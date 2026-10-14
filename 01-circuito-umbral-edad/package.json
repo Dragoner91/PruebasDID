@@ -1,0 +1,23 @@
+{
+  "name": "01-circuito-umbral-edad",
+  "version": "1.0.0",
+  "description": "Prueba 01: circuitos de predicados de umbral (mayoria de edad y vigencia) en Circom + Groth16",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "test:circuitos": "mocha test/circuitos.test.js",
+    "test:pruebas": "mocha --exit test/pruebas.test.js",
+    "test": "mocha --exit test/circuitos.test.js test/pruebas.test.js",
+    "bench": "node scripts/bench.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "circom_tester": "^0.0.24",
+    "circomlib": "^2.0.5",
+    "mocha": "^12.0.3",
+    "snarkjs": "^0.7.6"
+  }
+}

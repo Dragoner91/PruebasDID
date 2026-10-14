@@ -1,0 +1,98 @@
+{
+  "entorno": {
+    "fecha": "2026-10-13T23:39:22.080Z",
+    "hardhat": "2.29.1",
+    "hardfork": "osaka",
+    "solc": "0.8.24",
+    "optimizador": {
+      "enabled": true,
+      "runs": 200
+    }
+  },
+  "resultados": [
+    {
+      "circuito": "mayoria_edad",
+      "esquema": "groth16",
+      "contrato": "Groth16Verifier_mayoria_edad",
+      "aceptaValida": true,
+      "rechazaAlterada": true,
+      "gas": {
+        "despliegue": 368637,
+        "verificacionTotalTx": 221101,
+        "calldata": 4476,
+        "ejecucion": 195625
+      },
+      "bytesCalldata": 324
+    },
+    {
+      "circuito": "mayoria_edad",
+      "esquema": "plonk",
+      "contrato": "PlonkVerifier_mayoria_edad",
+      "aceptaValida": true,
+      "rechazaAlterada": true,
+      "gas": {
+        "despliegue": 1329187,
+        "verificacionTotalTx": 295202,
+        "calldata": 12644,
+        "ejecucion": 261558
+      },
+      "bytesCalldata": 836
+    },
+    {
+      "circuito": "mayoria_edad",
+      "esquema": "fflonk",
+      "contrato": "FflonkVerifier_mayoria_edad",
+      "aceptaValida": true,
+      "rechazaAlterada": true,
+      "gas": {
+        "despliegue": 3212198,
+        "verificacionTotalTx": 217919,
+        "calldata": 12656,
+        "ejecucion": 184263
+      },
+      "bytesCalldata": 836
+    },
+    {
+      "circuito": "vigencia",
+      "esquema": "groth16",
+      "contrato": "Groth16Verifier_vigencia",
+      "aceptaValida": true,
+      "rechazaAlterada": true,
+      "gas": {
+        "despliegue": 349856,
+        "verificacionTotalTx": 214273,
+        "calldata": 4336,
+        "ejecucion": 188937
+      },
+      "bytesCalldata": 292
+    },
+    {
+      "circuito": "vigencia",
+      "esquema": "plonk",
+      "contrato": "PlonkVerifier_vigencia",
+      "aceptaValida": true,
+      "rechazaAlterada": true,
+      "gas": {
+        "despliegue": 1275874,
+        "verificacionTotalTx": 294248,
+        "calldata": 12492,
+        "ejecucion": 260756
+      },
+      "bytesCalldata": 804
+    },
+    {
+      "circuito": "vigencia",
+      "esquema": "fflonk",
+      "contrato": "FflonkVerifier_vigencia",
+      "aceptaValida": true,
+      "rechazaAlterada": true,
+      "gas": {
+        "despliegue": 3134487,
+        "verificacionTotalTx": 216892,
+        "calldata": 12516,
+        "ejecucion": 183376
+      },
+      "bytesCalldata": 804
+    }
+  ]
+}

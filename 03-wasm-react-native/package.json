@@ -1,0 +1,16 @@
+{
+  "name": "03-wasm-react-native",
+  "version": "1.0.0",
+  "description": "Prueba 03: WebAssembly y snarkjs en React Native (Hermes vs WebView)",
+  "scripts": {
+    "artefactos": "node scripts/generar-artefactos.js",
+    "recolectar": "node scripts/recolectar.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "snarkjs": "^0.7.6"
+  }
+}
